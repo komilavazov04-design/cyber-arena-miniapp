@@ -1,0 +1,70 @@
+@media (max-width: 480px) {
+  .intro-stage {
+    width: 220px;
+    height: 220px;
+    margin-top: 22px;
+  }
+
+   .intro-stage {
+    width: 220px;
+    height: 220px;
+    margin-top: 22px;
+  }
+
+  .intro-model {
+    transform: scale(0.84);
+  }
+
+  .intro-title {
+    font-size: clamp(2rem, 11vw, 3.3rem);
+  }
+
+  .start-wrap {
+    margin-top: 18px;
+  }
+   .intro-image-shell {
+    width: 116px;
+    height: 116px;
+  }
+
+
+  .intro-logo-image {
+    width: 92px;
+    height: 92px;
+  }
+
+  .ring-1 {
+    width: 154px;
+    height: 154px;
+  }
+
+  .ring-2 {
+    width: 192px;
+    height: 192px;
+  }
+
+  .ring-glow {
+    width: 142px;
+    height: 142px;
+  }
+
+  .login-card {
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .start-btn {
+    min-height: 58px;
+  }
+}
+
+@media (min-width: 700px) {
+  .intro-content,
+  .login-content {
+    width: min(100%, 460px);
+  }
+
+  .intro-stage {
+    height: 360px;
+  }
+}

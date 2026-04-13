@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Arena</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/intro.css" />
+  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <section id="intro-screen" class="screen intro-screen">
+      <div class="bg-grid"></div>
+      <div class="bg-noise"></div>
+      <div class="aurora aurora-1"></div>
+      <div class="aurora aurora-2"></div>
+
+      <div class="intro-content">
+        <div class="intro-copy">
+          <div class="intro-kicker">TELEGRAM MINI APP</div>
+          <h1 class="intro-title">CYBER ARENA</h1>
+          <p class="intro-subtitle">NEXT-GEN COMPETITIVE GAMING</p>
+          <div class="intro-chip">WELCOME // PRESS START</div>
+        </div>
+
+        <div class="intro-stage">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring-glow"></div>
+
+          <div class="intro-model-shell glass-shell">
+            <img
+      src="./assets/image/intro-logo.png"
+      alt="Cyber Arena logo"
+      class="intro-logo-image"
+            />
+          </div>
+        </div>
+
+        <div class="start-wrap">
+          <button id="start-btn" class="start-btn">START</button>
+        </div>
+
+        <div class="version-tag">— V2.0.1 —</div>
+      </div>
+    </section>
+
+    <section id="login-screen" class="screen login-screen is-hidden">
+      <div class="login-bg">
+        <model-viewer
+          id="login-model"
+          class="login-model"
+          src="./assets/models/logo.glb"
+          alt="Cyber Arena background 3D logo"
+          autoplay
+          auto-rotate
+          rotation-per-second="5deg"
+          interaction-prompt="none"
+          shadow-intensity="1"
+          exposure="1"
+          environment-image="neutral"
+          camera-target="0m 0m 0m"
+          camera-orbit="0deg 78deg 7.2m"
+          field-of-view="28deg"
+          disable-pan
+          disable-zoom>
+        </model-viewer>
+      </div>
+
+      <div class="login-overlay"></div>
+
+      <div class="login-content">
+        <div class="login-header">
+          <div class="login-kicker">ACCESS PANEL</div>
+          <h2 class="login-title">Enter Arena</h2>
+          <p class="login-subtitle">Glass login card, 3D background, premium cyberpunk vibe.</p>
+        </div>
+
+        <div class="login-card glass-card">
+          <div class="login-card-top">
+            <span class="status-dot"></span>
+            <span>SECURE ACCESS</span>
+          </div>
+
+          <h3 class="login-card-title">Choose a login method</h3>
+          <p class="login-card-text">
+            Hozircha starter view. Keyin Telegram auth yoki custom login ulaymiz.
+          </p>
+
+          <div class="login-actions">
+            <button id="telegram-login-btn" class="glass-btn primary-btn">
+              Continue with Telegram
+            </button>
+
+            <button id="guest-login-btn" class="glass-btn ghost-btn">
+              Enter as Guest
+            </button>
+          </div>
+
+          <div class="login-footer-note">
+            Cyber Arena // secure gateway
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

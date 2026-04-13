@@ -1,0 +1,104 @@
+@keyframes spinClockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinCounter {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.52;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.16);
+  }
+}
+
+@keyframes auroraFloat1 {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0) scale(1);
+    opacity: 0.74;
+  }
+  50% {
+    transform: translateX(-47%) translateY(14px) scale(1.12);
+    opacity: 1;
+  }
+}
+
+@keyframes auroraFloat2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.68;
+  }
+  50% {
+    transform: translate(-18px, -16px) scale(1.14);
+    opacity: 1;
+  }
+}
+
+@keyframes screenEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.985);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes introTextOut {
+  to {
+    opacity: 0;
+    transform: translateY(-16px);
+    filter: blur(8px);
+  }
+}
+
+@keyframes introStageZoom {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.18);
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.36);
+    filter: blur(7px);
+  }
+}
+
+@keyframes loginReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.aurora-1 {
+  animation: auroraFloat1 8s ease-in-out infinite;
+}
+
+.aurora-2 {
+  animation: auroraFloat2 9s ease-in-out infinite;
+}
+
+.login-screen.revealed {
+  animation: loginReveal .7s ease;
+}
