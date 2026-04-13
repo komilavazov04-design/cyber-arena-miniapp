@@ -123,3 +123,36 @@ button {
   bottom: 10%;
   right: 4%;
 }
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #app {
+  background: #020814 !important;
+  color: #eef6ff !important;
+}
+
+.intro-kicker,
+.login-kicker {
+  color: #31d8ff !important;
+}
+
+.intro-title,
+.intro-chip,
+.start-btn,
+.login-title,
+.login-card-title,
+.login-card-top,
+.primary-btn,
+.ghost-btn {
+  color: #eef6ff !important;
+}
+
+.intro-subtitle,
+.version-tag,
+.login-subtitle,
+.login-card-text,
+.login-footer-note {
+  color: #8fa5ba !important;
+}
