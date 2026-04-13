@@ -5,8 +5,8 @@ export function initTelegram() {
   tg.ready();
   tg.expand();
 
-  const theme = tg.themeParams || {};
-  if (theme.text_color) document.body.style.color = theme.text_color;
+  if (tg.setHeaderColor) tg.setHeaderColor("#020814");
+  if (tg.setBackgroundColor) tg.setBackgroundColor("#020814");
 
   return tg;
 }
