@@ -4,13 +4,13 @@ export function initLoginActions() {
 
   if (telegramBtn) {
     telegramBtn.addEventListener("click", () => {
-      window.alert("Keyingi stepda Telegram auth ulaymiz bro ✅");
+      console.log("Telegram login bosildi");
     });
   }
 
   if (guestBtn) {
     guestBtn.addEventListener("click", () => {
-      window.alert("Keyingi stepda guest view yoki main menu transition qilamiz bro ✅");
+      console.log("Guest login bosildi");
     });
   }
 }
